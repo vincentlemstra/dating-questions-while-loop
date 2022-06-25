@@ -1,5 +1,6 @@
 'use strict';
 
+// Variable array with questions
 const questions = [
   "What is your first name?",
   "What is your last name?",
@@ -11,9 +12,19 @@ const questions = [
   "What is your favourite movie?"
 ];
 
-console.log(questions[5]);
+// Prints all questions 
+// console.log(questions);
 
-console.log(questions);
-console.table(questions);
+// Prints all questions in a table with correct index
+// console.table(questions);
+
+// Prints a specific question 
+console.log(questions[3]);
+
+// Prompts a specific question
+let awnser = prompt (questions[3]);
+console.log (awnser);
+
+
 
 
