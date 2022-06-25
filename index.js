@@ -12,12 +12,12 @@ const questions = [
   "What is your favourite movie?"
 ];
 
+// set variable
 const answers = [];
+// set counter
 let i = 0;
 
-console.log(`questions length: ${questions.length}`);
-console.log(`answers length: ${answers.length}`);
-
+// while loop; stops when all questions are answered
 while (answers.length < questions.length) {
   const question = questions[i];
   const answer = prompt(question);
