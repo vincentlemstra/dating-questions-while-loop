@@ -11,6 +11,8 @@ const questions = [
   "What is your favourite movie?"
 ];
 
+console.log(questions[5]);
+
 console.log(questions);
 console.table(questions);
 
