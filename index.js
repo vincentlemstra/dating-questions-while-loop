@@ -4,12 +4,12 @@
 const questions = [
   "What is your first name?",
   "What is your last name?",
-  // "What is your age?",
-  // "Where do you live?",
-  // "What is your gender?",
-  // "Which genders are you interested in dating?",
-  // "What is your main hobby?",
-  // "What is your favourite movie?"
+  "What is your age?",
+  "Where do you live?",
+  "What is your gender?",
+  "Which genders are you interested in dating?",
+  "What is your main hobby?",
+  "What is your favourite movie?"
 ];
 
 const answers = [];
@@ -31,11 +31,10 @@ while (answers.length < questions.length) {
   answers.push(answer);
   i++;
 }
-
 // print 2 rows: the question, with the corrisponding answer.
 for (let i = 0; i < answers.length; i++) {
   const humanNumber = i + 1;
   console.log(`Question ${humanNumber}: ${questions[i]}`);
-  console.log(`Answer: ${answers[i]}`);
+  console.log(`Answer: ${answers[i]}\n`);
 }
 
