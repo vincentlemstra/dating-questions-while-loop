@@ -23,7 +23,7 @@ while (answers.length < questions.length) {
   const answer = prompt(question);
 
   // answers can't be shorter than 2 characters
-  if (answer.length < 3) {
+  if (answer.length < 2) {
     console.log("This answer is too short");
     continue;
   }
