@@ -12,6 +12,21 @@ const questions = [
   "What is your favourite movie?"
 ];
 
+const answers = [];
+let i = 0;
+
+console.log (`questions length: ${questions.length}`);
+console.log (`answers length: ${answers.length}`);
+
+while (answers.length < questions.length) {
+  const question = questions[i];
+  const answer = prompt(question);
+
+  // Save the answer to variable 'answers'
+  answers.push(answer);
+  i++;
+}
+
 // Prints all questions 
 // console.log(questions);
 
@@ -25,34 +40,6 @@ const questions = [
 // let awnser3 = prompt (questions[3]);
 // console.log (awnser3);
 
-// Creates the while loop while true
-while (true) {
-  // prompt to start the questionaire
-  const answer = prompt("Do you want to answer some questions for your profile bio? Y/N");
-  // if prompt is answered with N, the loop stops
-  if (answer === "N") {
-    console.log("Oke, next time");
-    break;
-  }
-  // if prompt is answered with Y, the loop continue's
-  if (answer === "Y") {
-    const firstName = prompt(questions[0]);
-    const lastName = prompt(questions[1]);
-    const age = Number(prompt(questions[2]));
-    const liveIn = prompt(questions[3]);
-    const gender = prompt(questions[4]);
-    const interestedInGender = prompt(questions[5]);
-    const hobby = prompt(questions[6]);
-    const favouriteMovie = prompt(questions[7]);
-    
-    // prints answers
-    console.log(`The following bio will be generated: My name is: ${firstName} ${lastName}. I am ${age} years old. And I live in ${liveIn}. I identify myself a ${gender} and I am interested in ${interestedInGender}. My main hobby is ${hobby} and my favourite movie is ${favouriteMovie}.`);
-    console.log("Thank you for answering the qustions. Your profile bio will be updated soon.")
-    break;
-  } else {
-    console.log("Your answer was unclear");
-  }
-}
 
 
 
